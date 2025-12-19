@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Saudi Vibes | Home</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" href="images/favicon.png" type="image/png">
+  <style>
+    .hero-title {
+      text-shadow: 0 0 10px rgba(30, 139, 195, 0.8);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="header-inner">
+      <div class="header-logo">
+        <span class="logo-text">Saudi Vibes</span>
+      </div>
+      <nav>
+        <ul>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="achievements.html">Achievements</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="register.html">Register</a></li>
+        <li><a href="login.html">Login</a></li>
+        </ul>
+      </nav>
+      <div class="header-icon">
+        <img src="images/favicon.png" alt="Saudi Vibes Icon">
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="achievements-header">
+      <h2 class="hero-title">Discover the New Saudi Vibes</h2>
+      <p>Saudi Vibes is a modern web portal that highlights key projects, giga-projects, sports events, and technology milestones that represent the transformation of Saudi Arabia.</p>
+      <div class="filters">
+        <button class="filter-button active" onclick="window.location.href='achievements.html'">Explore Achievements</button>
+        <button class="filter-button" onclick="window.location.href='about.html'">Learn About the Project</button>
+      </div>
+      <p id="current-date-text"></p>
+    </section>
+
+    <section class="achievements-grid">
+      <article class="achievement-card">
+        <img src="images/neom.jpg" alt="NEOM – The Line">
+        <div class="card-content">
+          <h3>NEOM – The Line</h3>
+          <p>A futuristic linear city redefining urban life with zero cars and zero emissions.</p>
+          <span class="badge">Tourism & Giga Project</span>
+        </div>
+      </article>
+
+      <article class="achievement-card">
+        <img src="images/red-sea.jpg" alt="The Red Sea Project">
+        <div class="card-content">
+          <h3>The Red Sea Project</h3>
+          <p>A luxury regenerative tourism destination on the Red Sea coast.</p>
+          <span class="badge">Tourism & Giga Project</span>
+        </div>
+      </article>
+
+      <article class="achievement-card">
+        <img src="images/riyadh-season.jpg" alt="Riyadh Season">
+        <div class="card-content">
+          <h3>Riyadh Season</h3>
+          <p>An entertainment season filled with concerts, shows, games, and global experiences.</p>
+          <span class="badge">Entertainment</span>
+        </div>
+      </article>
+    </section>
+
+    <section>
+      <h2>Intro Media</h2>
+      <p>This section demonstrates multimedia content for the project.</p>
+      <video controls width="100%" poster="images/vision-poster.jpg">
+        <source src="media/vision2030.mp4" type="video/mp4">
+        <source src="media/vision2030.webm" type="video/webm">
+        Your browser does not support HTML5 video.
+      </video>
+
+      <audio controls>
+        <source src="media/intro.mp3" type="audio/mpeg">
+        <source src="media/intro.ogg" type="audio/ogg">
+        Your browser does not support the audio element.
+      </audio>
+    </section>
+
+    <section>
+      <h2>Quick Overview</h2>
+      <p>This project is part of a Web Development course and is designed to practice real-world skills using HTML, CSS, JavaScript, and more.</p>
+      <table>
+        <caption>Website Sections</caption>
+        <thead>
+          <tr>
+            <th>Section</th>
+            <th>Purpose</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Home</td>
+            <td>Intro to Saudi Vibes and quick highlights.</td>
+            <td>Completed</td>
+          </tr>
+          <tr>
+            <td>Achievements</td>
+            <td>Interactive cards with filters and details.</td>
+            <td>Completed</td>
+          </tr>
+          <tr>
+            <td>About</td>
+            <td>Explains the project idea and goals.</td>
+            <td>Completed</td>
+          </tr>
+          <tr>
+            <td>Contact</td>
+            <td>Form to collect feedback and messages.</td>
+            <td>Completed</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Saudi Vibes – CS3810 Web Development Project</p>
+  </footer>
+
+  <script>
+    var dateElement = document.getElementById("current-date-text");
+    if (dateElement) {
+      var now = new Date();
+      dateElement.textContent = "Today’s date: " + now.toLocaleDateString();
+    }
+  </script>
+  <script src="js/main.js"></script>
+</body>
+</html>

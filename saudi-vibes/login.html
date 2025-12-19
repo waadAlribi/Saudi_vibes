@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Saudi Vibes | Login</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" href="images/favicon.png" type="image/png">
+</head>
+<body>
+  <header>
+    <div class="header-inner">
+      <div class="header-logo">
+        <span class="logo-text">Saudi Vibes</span>
+      </div>
+      <nav>
+        <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="achievements.html">Achievements</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="register.html">Register</a></li>
+        <li><a href="login.html" class="active">Login</a></li>
+        </ul>
+      </nav>
+      <div class="header-icon">
+        <img src="images/favicon.png" alt="Saudi Vibes Icon">
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <h2>Login</h2>
+    <p>Login to access your personalized Saudi Vibes experience.</p>
+
+    <form action="backend/login.php" method="post" id="login-form">
+      <label for="login-email">Email Address</label>
+      <input type="email" id="login-email" name="login-email" required>
+
+      <label for="login-password">Password</label>
+      <input type="password" id="login-password" name="login-password" required>
+
+      <label>
+        <input type="checkbox" id="remember-me" name="remember-me">
+        Remember me
+      </label>
+
+      <button type="submit">Login</button>
+
+      <p>Don't have an account? <a href="register.html">Create one here</a>.</p>
+    </form>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Saudi Vibes – By Waad Alribi</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

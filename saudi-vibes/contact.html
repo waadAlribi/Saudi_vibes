@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Saudi Vibes | Contact</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" href="images/favicon.png" type="image/png">
+</head>
+<body>
+  <header>
+    <div class="header-inner">
+      <div class="header-logo">
+        <span class="logo-text">Saudi Vibes</span>
+      </div>
+      <nav>
+        <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="achievements.html">Achievements</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+        <li><a href="register.html">Register</a></li>
+        <li><a href="login.html">Login</a></li>
+        </ul>
+      </nav>
+      <div class="header-icon">
+        <img src="images/favicon.png" alt="Saudi Vibes Icon">
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <h2>Contact Us</h2>
+    <p>If you have any questions, suggestions, or feedback, feel free to reach out using the form below.</p>
+    <p>You can also email us directly at
+      <a href="mailto:saudivibes@example.com">saudivibes@example.com</a>.
+    </p>
+
+    <form action="#" method="post" enctype="multipart/form-data" id="contact-form">
+      <label for="name">Full Name</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email Address</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="department">Category</label>
+      <select id="department" name="department" required>
+        <option value="">Select a category</option>
+        <option value="feedback">General Feedback</option>
+        <option value="bug">Report an Issue</option>
+        <option value="idea">New Project Idea</option>
+        <option value="other">Other</option>
+      </select>
+
+      <span>Project Type</span>
+      <label>
+        <input type="radio" name="projectType" value="student" required>
+        Student Project
+      </label>
+      <label>
+        <input type="radio" name="projectType" value="personal">
+        Personal Interest
+      </label>
+
+      <label>
+        <input type="checkbox" name="subscribe" value="yes">
+        Subscribe to updates
+      </label>
+
+      <label for="attachment">Upload Attachment</label>
+      <input type="file" id="attachment" name="attachment">
+
+      <label for="favoriteColor">Favorite Color</label>
+      <input type="color" id="favoriteColor" name="favoriteColor" value="#1e8bc3">
+
+      <label for="importance">Message Importance (1–5)</label>
+      <input type="number" id="importance" name="importance" min="1" max="5" value="3">
+
+      <label for="satisfaction">Website Satisfaction (0–10)</label>
+      <input type="range" id="satisfaction" name="satisfaction" min="0" max="10" value="7">
+
+      <label for="message">Your Message</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+
+      <button type="submit">Send Message</button>
+    </form>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Saudi Vibes – By Waad Alribi</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

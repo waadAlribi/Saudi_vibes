@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Saudi Vibes | Achievements</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" href="images/favicon.png" type="image/png">
+</head>
+<body>
+  <header>
+    <div class="header-inner">
+      <div class="header-logo">
+        <span class="logo-text">Saudi Vibes</span>
+      </div>
+      <nav>
+        <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="achievements.html" class="active">Achievements</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="register.html">Register</a></li>
+        <li><a href="login.html">Login</a></li>
+        <li><a href="react-dashboard.html">Dashboard</a></li>
+        </ul>
+      </nav>
+      <div class="header-icon">
+        <img src="images/favicon.png" alt="Saudi Vibes Icon">
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="achievements-header">
+      <h2>Saudi Achievements</h2>
+      <p>Explore major national projects, giga-projects, sports events, urban development initiatives, and technology milestones shaping Saudi Arabia today.</p>
+
+      <div class="filters">
+        <button class="filter-button active" data-filter="all">All</button>
+        <button class="filter-button" data-filter="tourism">Tourism & Giga Projects</button>
+        <button class="filter-button" data-filter="sports">Sports & Global Events</button>
+        <button class="filter-button" data-filter="urban">Urban Transformation</button>
+        <button class="filter-button" data-filter="tech">Technology & Space</button>
+      </div>
+
+      <div class="search-box">
+        <input type="text" id="search-input" placeholder="Search achievements...">
+      </div>
+    </section>
+
+    <section class="achievements-grid">
+      <article class="achievement-card" data-category="tourism" data-image="images/neom.jpg">
+        <img src="images/neom.jpg" alt="NEOM – The Line">
+        <div class="card-content">
+          <h3>NEOM – The Line</h3>
+          <p>A futuristic linear city project in NEOM, representing a new model of sustainable urban living.</p>
+          <span class="badge">Tourism & Giga Project</span>
+        </div>
+      </article>
+
+      <article class="achievement-card" data-category="tourism" data-image="images/red-sea.jpg">
+        <img src="images/red-sea.jpg" alt="The Red Sea Project">
+        <div class="card-content">
+          <h3>The Red Sea Project</h3>
+          <p>A luxury tourism destination featuring islands, reefs, and eco-friendly resorts on the Red Sea coast.</p>
+          <span class="badge">Tourism & Giga Project</span>
+        </div>
+      </article>
+
+      <article class="achievement-card" data-category="tourism" data-image="images/qiddiya.jpg">
+        <img src="images/qiddiya.jpg" alt="Qiddiya City">
+        <div class="card-content">
+          <h3>Qiddiya City</h3>
+          <p>Saudi Arabia’s capital of entertainment, sports, and culture, designed as a vibrant leisure destination.</p>
+          <span class="badge">Tourism & Giga Project</span>
+        </div>
+      </article>
+
+      <article class="achievement-card" data-category="tourism" data-image="images/diriyah-gate.jpg">
+        <img src="images/diriyah-gate.jpg" alt="Diriyah Gate Development">
+        <div class="card-content">
+          <h3>Diriyah Gate Development</h3>
+          <p>A heritage-driven development transforming Diriyah into a cultural and lifestyle hub.</p>
+          <span class="badge">Tourism & Giga Project</span>
+        </div>
+      </article>
+
+      <article class="achievement-card" data-category="tourism" data-image="images/alula-maraya.jpg">
+        <img src="images/alula-maraya.jpg" alt="AlUla – Maraya">
+        <div class="card-content">
+          <h3>AlUla – Maraya</h3>
+          <p>A mirrored concert hall and cultural landmark surrounded by the ancient landscapes of AlUla.</p>
+          <span class="badge">Tourism & Giga Project</span>
+        </div>
+      </article>
+
+      <article class="achievement-card" data-category="sports" data-image="images/f1-saudi-gp.jpg">
+        <img src="images/f1-saudi-gp.jpg" alt="Formula 1 Saudi Arabian Grand Prix">
+        <div class="card-content">
+          <h3>Formula 1 Saudi Arabian Grand Prix</h3>
+          <p>A high-speed night race hosted on the Jeddah Corniche Circuit, placing Saudi Arabia on the global motorsport map.</p>
+          <span class="badge">Sports & Events</span>
+        </div>
+      </article>
+
+      <article class="achievement-card" data-category="sports" data-image="images/dakar-rally.jpg">
+        <img src="images/dakar-rally.jpg" alt="Dakar Rally Saudi Arabia">
+        <div class="card-content">
+          <h3>Dakar Rally Saudi Arabia</h3>
+          <p>An extreme off-road endurance rally crossing Saudi deserts, mountains, and valleys.</p>
+          <span class="badge">Sports & Events</span>
+        </div>
+      </article>
+
+      <article class="achievement-card" data-category="sports" data-image="images/riyadh-season.jpg">
+        <img src="images/riyadh-season.jpg" alt="Riyadh Season Mega Events">
+        <div class="card-content">
+          <h3>Riyadh Season Mega Events</h3>
+          <p>A large-scale entertainment season featuring concerts, festivals, games, and global experiences.</p>
+          <span class="badge">Entertainment</span>
+        </div>
+      </article>
+
+      <article class="achievement-card" data-category="sports" data-image="images/diriyah-eprix.jpg">
+        <img src="images/diriyah-eprix.jpg" alt="Diriyah E-Prix">
+        <div class="card-content">
+          <h3>Diriyah E-Prix</h3>
+          <p>A Formula E race held in Diriyah, combining electric racing with a unique historical backdrop.</p>
+          <span class="badge">Sports & Events</span>
+        </div>
+      </article>
+
+      <article class="achievement-card" data-category="urban" data-image="images/riyadh-metro.jpg">
+        <img src="images/riyadh-metro.jpg" alt="Riyadh Metro">
+        <div class="card-content">
+          <h3>Riyadh Metro</h3>
+          <p>A modern public transport system designed to reduce traffic and support sustainable mobility in Riyadh.</p>
+          <span class="badge">Urban Transformation</span>
+        </div>
+      </article>
+
+      <article class="achievement-card" data-category="urban" data-image="images/jeddah-central.jpg">
+        <img src="images/jeddah-central.jpg" alt="Jeddah Central Project">
+        <div class="card-content">
+          <h3>Jeddah Central Project</h3>
+          <p>A waterfront redevelopment transforming Jeddah’s central area into a mixed-use urban destination.</p>
+          <span class="badge">Urban Transformation</span>
+        </div>
+      </article>
+
+      <article class="achievement-card" data-category="urban" data-image="images/new-murabba.jpg">
+        <img src="images/new-murabba.jpg" alt="New Murabba & The Mukaab">
+        <div class="card-content">
+          <h3>New Murabba & The Mukaab</h3>
+          <p>An immersive downtown project in Riyadh centered around a massive cube-shaped landmark.</p>
+          <span class="badge">Urban Transformation</span>
+        </div>
+      </article>
+
+      <article class="achievement-card" data-category="urban" data-image="images/king-salman-park.jpg">
+        <img src="images/king-salman-park.jpg" alt="King Salman Park">
+        <div class="card-content">
+          <h3>King Salman Park</h3>
+          <p>One of the world’s largest urban parks, designed to enhance quality of life in Riyadh.</p>
+          <span class="badge">Urban Transformation</span>
+        </div>
+      </article>
+
+      <article class="achievement-card" data-category="tech" data-image="images/saudi-astronauts.jpg">
+        <img src="images/saudi-astronauts.jpg" alt="Saudi Astronauts to the ISS">
+        <div class="card-content">
+          <h3>Saudi Astronauts to the ISS</h3>
+          <p>Saudi astronauts participating in missions to the International Space Station, reflecting the Kingdom’s space ambitions.</p>
+          <span class="badge">Technology & Space</span>
+        </div>
+      </article>
+
+      <article class="achievement-card" data-category="tech" data-image="images/smart-apps.jpg">
+        <img src="images/smart-apps.jpg" alt="Saudi 5G & Smart Government Apps">
+        <div class="card-content">
+          <h3>Saudi 5G & Smart Government Apps</h3>
+          <p>Advanced digital services and nationwide 5G rollout through platforms such as Absher and Tawakkalna.</p>
+          <span class="badge">Technology & Digital</span>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <div id="card-modal" class="modal">
+    <div class="modal-content">
+      <span class="modal-close">&times;</span>
+      <img id="modal-image" alt="">
+      <h3 id="modal-title"></h3>
+      <p id="modal-description"></p>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Saudi Vibes – By Waad Alribi</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

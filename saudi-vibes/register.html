@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Saudi Vibes | Register</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" href="images/favicon.png" type="image/png">
+</head>
+<body>
+  <header>
+    <div class="header-inner">
+      <div class="header-logo">
+        <span class="logo-text">Saudi Vibes</span>
+      </div>
+      <nav>
+        <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="achievements.html">Achievements</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="register.html" class="active">Register</a></li>
+        <li><a href="login.html">Login</a></li>
+        </ul>
+      </nav>
+      <div class="header-icon">
+        <img src="images/favicon.png" alt="Saudi Vibes Icon">
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <h2>Create an Account</h2>
+    <p>Register to save your favorite achievements and get a more personalized experience.</p>
+
+    <form action="backend/register.php" method="post" id="register-form">
+      <label for="reg-name">Full Name</label>
+      <input type="text" id="reg-name" name="reg-name" required>
+
+      <label for="reg-email">Email Address</label>
+      <input type="email" id="reg-email" name="reg-email" required>
+
+      <label for="reg-password">Password</label>
+      <input type="password" id="reg-password" name="reg-password" required>
+
+      <label for="reg-confirm-password">Confirm Password</label>
+      <input type="password" id="reg-confirm-password" name="reg-confirm-password" required>
+
+      <button type="submit">Create Account</button>
+
+      <p>Already have an account? <a href="login.html">Login here</a>.</p>
+    </form>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Saudi Vibes – By Waad Alribi</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
